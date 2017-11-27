@@ -1,0 +1,90 @@
+/* Sass Document */
+
+@import 'reset';
+
+@font-face {
+  font-family: 'Amatic';
+	src: url('../fonts/Amatic-Bold.woff') format('woff'),
+		   url('../fonts/Amatic-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+$fonts: 'Amatic', 'Arial', 'Helvetica', sans-serif;
+$span: 'Helvetica', 'Arial', sans-serif;
+$text: #fff;
+$green: #32CD32;
+$forest: #2CAF2C;
+$align: center;
+$small: 20px;
+$beast: #666;
+
+body {
+  background-color: #FFA500;
+}
+
+h1, h2, h3, h4, h5, p, input {
+  font-family: $fonts;
+  color: $text;
+  text-align: $align;
+  line-height: 70px;
+  padding: 10px;
+}
+
+#name {
+    border-radius: $small;
+}
+
+#button {
+  display: none;
+}
+
+#button, #submit {
+  border-radius: 15px;
+  background-color: $green;
+  font-size: $small;
+  font-family: $span;
+  transition: 2s;
+}
+
+#button:hover {
+  background-color: $forest;
+}
+
+p {
+  font-size: 45px;
+  text-align: $align;
+  padding: 20px;
+}
+
+[type=text] {
+  margin: 10px;
+  font-family: $span;
+  font-size: 25px;;
+  color: $beast;
+}
+
+#result {
+  text-transform: uppercase;
+  font-family: $span;
+  background-color: $text;
+  font-size: $small;
+  line-height:30px;
+  color: $beast;
+  text-align: $align;
+  margin-bottom: $small;
+  display: none;
+}
+
+
+.visible {
+  display: block !important;
+}
+
+.invisible {
+  display:none;
+}
